@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <p class="student">Jacinda</p>
+    <p class="student">Tina</p>
+    <p class="student">Ethan</p>
+    <p class="student">Kathreen</p>
+    <p class="student">TJ</p>
+    <button onclick="scaryTeacher()">Who's going to Paradise?</button>
+    <script>
+      //When the user clicks a button
+      //A random number will be generated
+      //The random number will correspond to a random class
+      //The class will be replaced by the word "Went to Paradise"
+      function scaryTeacher() {
+      var x= document.getElementsByClassName('student').length;
+      var random=Math.floor(Math.random()*x);
+      document.getElementsByClassName('student')[random].innerHTML="Went to Paradise"
+      }
+    
+  </script>
+  
+  </body>
+  
+</html>
