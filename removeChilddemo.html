@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <ul>
+      <li>Trump</li>
+      <li>Putin</li>
+      <li>DeVos</li>
+      <li>Kavenaugh</li>
+    </ul>
+    <button onclick="removeItem()">Remove</button>
+    <script>
+      function removeItem() {
+        var eliminate= document.getElementsByTagName('li')[0];
+        //('li')[0] is Trump
+        //Save Trump as eliminate
+        
+        var container= eliminate.parentNode;
+        //Find the parent node of eliminate, which is ul
+        //Save it as container
+        container.removeChild(eliminate);
+      }
+    </script>
+  </body>
+</html>

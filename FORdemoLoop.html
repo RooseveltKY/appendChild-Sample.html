@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <ul></ul>
+    <script>
+  var arr= ["apple", "banana", "orange"];
+  //creating a FOR loop
+  for (var i=0; i<arr.length; i++) {
+    //++ is add one to i every time the loop runs
+    //-- is saying that i is negative each time, so it will be infinite
+  var newItem= document.createElement('li');
+  //The new list is not attached to anything yet
+  var newText= document.createTextNode(arr[i]);
+  //The text is also not attached to anything
+  newItem.appendChild(newText);
+  var position= document.getElementsByTagName('ul')[0];
+  //getElementsByTagName takes the tag name 'ul' and takes the first line
+  position.appendChild(newItem);
+}
+
+    </script>
+  </body>
+</html>

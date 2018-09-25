@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <ul>
+      <li>Trump</li>
+      <li>Putin</li>
+      <li>DeVos</li>
+      <li>Kavenaugh</li>
+    </ul>
+    <select id="corrupted">
+      <option value="1">Trump</option>
+      <option value="2">Putin</option>
+      <option value="3">DeVos</option>
+      <option value="4">Kavenaugh</option>
+    </select>
+    <button onclick="removeItem()">Who should we remove?</button>
+    <script>
+      function removeItem() {
+        //I will get the value of the corrupted ID and save it as corrupted
+        var corrupted= document.getElementById('corrupted').value;
+        //I will get the list item by the cprrupted index position and save as eliminate.
+        var eliminate= document.getElementsByTagName('li')[corrupted];
+        //Get the parent node of the list item and save it as container
+        var container= eliminate.parentNode;
+        //Remove the list item from the container
+        container.removeChild(eliminate);
+      }
+    </script>
+  </body>
+  
+</html>
